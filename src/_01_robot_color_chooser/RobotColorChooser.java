@@ -4,24 +4,51 @@
 package _01_robot_color_chooser;
 
 import javax.swing.JOptionPane;
+
+import org.jointheleague.graphical.robot.Robot;
+
 import java.awt.Color;
 
 public class RobotColorChooser {
 	public static void main(String[] args) {
-		//1. Create a new Robot
 		
-		//3. Ask the user what color they would like the robot to draw
+		Robot jim = new Robot();
 		
-		//5. Use an if/else statement to set the pen color that the user requested
+	String input=	JOptionPane.showInputDialog("What color do you want the robot to draw?" );
 
-        //6. If the user doesn’t enter anything, choose a random color
+if (input.equals("red")) {
+	jim.setPenColor(Color.RED);
+}
+else if (input.equals("green")) {
+	jim.setPenColor(Color.green);
+}
+else if (input.equals("yellow")) {
+	jim.setPenColor(Color.yellow);
+}
+else if (input.equals("blue")) {
+	jim.setPenColor(Color.blue);
+}
+else if (input.equals("purple")) {
+	jim.setPenColor(Color.MAGENTA);
+}
+else if (input.equals("orange")) {
+	jim.setPenColor(Color.orange);
+}
+jim.penDown();    //6. If the user doesn’t enter anything, choose a random color
 
         //7. Put a loop around your code so that you keep asking the user for more colors & drawing them
-		
-		//4. Set the pen width to 10
-		
-	    //2. Make the robot draw a shape (this will take more than one line of code)
 
+		//4. Set the pen width to 10
+		jim.setPenWidth(10);
+	    //2. Make the robot draw a shape (this will take more than one line of code)
+		
+jim.move(100);
+jim.turn(90);
+jim.move(100);
+jim.turn(90);
+jim.move(100);
+jim.turn(90);
+jim.move(100);
 
 	}
 }
