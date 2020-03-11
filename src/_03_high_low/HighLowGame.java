@@ -24,10 +24,10 @@ int num=Integer.parseInt(input);
 if (num==random) {
 	JOptionPane.showMessageDialog(null, "Yoi!!! You win!");
 }
-else if(num>random); {
+else if(num>random) {
 	JOptionPane.showMessageDialog(null,"Too high! You lose!" );
 }
- if(num<random); {
+else if(num<random) {
 	JOptionPane.showMessageDialog(null, "Too low. You lose");
 }
 			// 5. if the guess is correct
